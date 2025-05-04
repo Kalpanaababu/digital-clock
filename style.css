@@ -1,0 +1,89 @@
+.clock{
+    width: 100%;
+    min-height: 100vh;
+    background: beige;
+    position: relative;
+    color:black;
+}
+.store{
+    width: 800px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.digital{
+    width: 100%;
+    height: 100%;
+    background: rgb(79, 21, 35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(40px) ;
+
+}
+.digital span{
+    font-size: 80px;
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+
+}
+.digital span::after{
+    
+    font-size:  15px; 
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+}
+#hrs::after{
+    content:'HOURS';
+
+}
+#min::after{
+    content:'MINS';
+    
+}
+#sec::after{
+    content:'SEC';
+    
+}
+body{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.stopwatch{
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px 24px;
+    border-radius: 10px;
+}
+
+.timerDisplay{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.buttons{
+    margin-top: 20px;
+}
+
+.btn{
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    background-color: var(--clr);
+    padding: 12px 24px;
+    margin-inline: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
